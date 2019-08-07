@@ -2,9 +2,12 @@ from django.conf import settings
 from django.contrib import admin
 from django.urls import path, include
 
+from users.views import MySignupView
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('users/', include('django.contrib.auth.urls')),
+    path('accounts/signup/custom/', MySignupView.as_view(), name="account_signup_custom"),
     path('accounts/', include('allauth.urls')),
     path('', include('pages.urls')),
 ]

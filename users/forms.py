@@ -7,7 +7,7 @@ class CustomUserCreationForm(forms.ModelForm):
 
     class Meta:
         model = CustomUser
-        fields = ('email',)
+        fields = ('email', )
 
     def save(self, commit=True):
         instance = super().save(commit=False)

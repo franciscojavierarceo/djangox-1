@@ -20,8 +20,8 @@ A framework for launching new Django projects quickly. Comes with a complete use
 2.  Clone the repo and configure the virtual environment:
 
 ```
-$ git clone https://github.com/wsvincent/djangox.git
-$ cd djangox
+$ git clone https://github.com/franciscojavierarceo/djangox-1.git
+$ cd djangox-1
 $ pipenv install
 $ pipenv shell
 ```

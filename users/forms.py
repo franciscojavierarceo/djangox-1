@@ -36,6 +36,7 @@ class CustomUserCreationForm(forms.ModelForm):
 
         if commit:
             instance.save()
+
         return instance
 
 class CustomUserChangeForm(UserChangeForm):

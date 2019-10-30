@@ -2,8 +2,8 @@ from django.conf import settings
 from django.contrib import admin
 from django.urls import path, include
 
-from users.views import MySignupView
-from allauth.account.views import LoginView, ConfirmEmailView, EmailView
+from users.views import MySignupView, ConfirmEmailView
+from allauth.account.views import LoginView, EmailView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -11,6 +11,7 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('', MySignupView.as_view(), name="account_signup_custom"),
     path('', include('pages.urls')),
+    path('accounts/confirm-email/<slug>/',  ConfirmEmailView.as_view(), name='account_confirm_email'),
 ]
 
 if settings.DEBUG:

@@ -10,4 +10,7 @@ class AboutPageView(TemplateView):
 
 
 class ThankYouView(TemplateView):
-    template_name = 'pages/thankyou.html'
+    template_name =  'pages/thankyou.html'
+    def get(self, request, *args, **kwargs):
+        context = {"message": "Hello!"}
+        return self.render_to_response(context)

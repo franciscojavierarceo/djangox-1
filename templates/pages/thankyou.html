@@ -3,5 +3,5 @@
 {% block title %}Thank you{% endblock %}
 
 {% block content %}
-<h1>Thank you for signing up</h1>
+<h1>Thank you for signing up, {{ request.session.message}}</h1>
 {% endblock content %}

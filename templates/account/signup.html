@@ -4,7 +4,7 @@
 {% block title %}Sign up{% endblock %}
 
 {% block content %}
-<h2>Sign up Test</h2>
+<h2>Sign up</h2>
 <form method="post" action="{% url 'account_signup_custom' %}">
   {% csrf_token %}
   {{ form.email}}

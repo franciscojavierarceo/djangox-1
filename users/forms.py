@@ -40,7 +40,6 @@ class CustomUserCreationForm(forms.ModelForm):
         return instance
 
 class CustomUserChangeForm(UserChangeForm):
-
     class Meta:
         model = CustomUser
         fields = ('email', 'username',)

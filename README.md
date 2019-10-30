@@ -8,7 +8,7 @@ A framework for launching new Django projects quickly. Comes with a complete use
 ### NOTE FROM Francisco Javier Arceo 
 > **NOTE**: This is my personal, opinionated branch that has several changes built on top of DjangoX (which I love).
 
-  - I create a minimal sign-up flow and initialize a an unusable password so users have to verify their email first
+  - I create a minimal sign-up flow and initialize an unusable password so users have to verify their email first
   - I create a custom adapter to filter out some obvious things and override allauth
   - I require additional verification steps
 

@@ -5,7 +5,7 @@ A framework for launching new Django projects quickly. Comes with a complete use
 > **NOTE**: This open source project is supported by my two published books [Django for Beginners](https://djangoforbeginners.com/) and [Django for APIs](https://djangoforapis.com). Both of which have the first few chapters available for free online. Please take a look!
 
 
-### NOTE FROM Francisco Javier Arceo 
+### ADDITIONAL NOTE from Francisco (this branch owner)
 > **NOTE**: This is my personal, opinionated branch that has several changes built on top of DjangoX (which I love).
 
   - I create a minimal sign-up flow and initialize an unusable password so users have to verify their email first
